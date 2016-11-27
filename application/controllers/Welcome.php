@@ -1,6 +1,14 @@
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
+class Welcome extends Application
+{
+	public function index() {
+        $this->data['content'] = "go away";
+	    $this->render();
+	}
+
+/*defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends Application {
 
@@ -21,6 +29,6 @@ class Welcome extends Application {
 		$this->data['content'] = $result;
 		//$this->data['caboose_styles'] = '';
 		$this->render();
-	}
+	}*/
 
 }
